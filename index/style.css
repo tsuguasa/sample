@@ -1,0 +1,483 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+:root{
+    --main-color:rgba(200,12,15,1.00);
+}
+/*共通*/
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.8;
+    background:#FFFFFF;
+color:#333333;
+}
+img{
+    max-width:100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+section{
+    margin-bottom: 40px;
+}
+h3{
+    color:#966c3b;
+    font-size:1.5rem;
+    border-bottom:1px dashed #966c3b;
+   font-weight: bold;
+    margin-bottom: 1.2rem
+}
+
+/*---------------header-----------------*/
+.head-wrap{
+    position:sticky;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+header{
+    background:#d0af84;
+}
+h1{
+    width:500px;
+    padding:10px 0;
+    color:#FFFFFF;
+}
+.h1{
+    font-size:1.2rem;
+}
+header button{
+    display:none;
+    width:60px;
+    height:60px;
+    background: url("../images/hamburger.png") no-repeat;
+    background-size:cover;
+    align-self:center;
+}
+/*---------------global nav-----------------*/
+header+nav{
+    background: #966c3b;
+    color:#FFFFFF;
+}
+header+nav li{
+    width:25%;
+    text-align: center;
+}
+a{
+     display:block;
+     padding:1em 0;
+}
+header+nav a:hover{
+   background:#d0af84;
+}
+/*---------------index.html-----------------*/
+.mainVisual{
+    background:url("../images/toppage.jpg") center/cover;
+    height:100vh;
+}
+.catch {
+    padding:1.2em 0;
+    font-size:2rem;
+    text-align: center;
+    line-height: 1.3;
+    color:#966c3b;
+    margin-bottom: 40px;
+    margin-top:30px;
+}
+
+.subtitle{
+  font-size:1.3rem;
+  line-height: 1;
+  margin-top:30px;
+}
+/**---------------info-----------------*/
+.news ul{
+    list-style-type: disc;
+    background: #FFFFFF;
+padding-left:5%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.four ul{
+    display: flex;
+flex-wrap: wrap;
+    justify-content: space-between;
+}
+.four li{
+    list-style-type:none;
+    width:24.5%;
+     padding: 0 5px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.four a:hover{
+   color:#555;
+}
+figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+/*section{
+    margin:0 auto;
+    width:70%;
+}
+h3{
+    color:var(--main-color);
+    font-size:1.5rem;
+    border-bottom:1px dashed rgba(200,12,15,1.00);
+   font-weight: bold;
+    margin-bottom: 1.2rem
+}
+section ul{
+    list-style-type: disc;
+    background: #FFFFFF;
+padding-left:5%;
+    padding: 20px;
+    border-radius: 20px;
+}*/
+/*---------------course.html-----------------*/
+.course{
+    width:80%;
+    margin:0 auto;
+}
+.lesson{
+    margin-top:40px;
+}
+
+.lesson section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lesson div{
+    width:48%;
+}
+.lesson img{
+    border-radius:20px;
+    width:100%;
+}
+.lesson h2{
+    font-weight: bold;
+    font-size:1.5em;
+    margin-bottom:2rem;
+}
+.lesson span{
+    background:#b9cd33;
+    padding:3px;
+    color:#fff;
+    margin:3px;
+    border-radius:5px;
+    line-height: 3em;
+}
+.lesson li{
+    list-style-type: none;
+}
+.lesson>.point{
+    margin-top:40px;
+    padding:20px;
+    width:100%;
+    border-radius: 20px;
+}
+.point{
+    background:url("../images/point@2x.png") #fff no-repeat 0 0/60px;
+    padding:35%;
+    border-radius: 15px;
+}
+.point a{
+    color:#b9cd33;
+    text-decoration: underline;
+}
+.point a:hover{
+    color:#d4e082;
+}
+/*----------------------schedule--------------------*/
+.schedule dl{
+    display:inline-flex;
+}
+.schedule dt,.schedule dd{
+    padding:0.7em 3em;
+    border-bottom:1px dashed #333;
+}
+.schedule dt{
+  /*font-weight:normal;*/
+    padding-left:1.5em;
+    width:11em;}
+/*-------------------------kousi--------------------*/
+.kousi img{
+    border-radius:50%;
+     float:left;
+    width:20%;
+    padding:20px;
+}
+.kousi p{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding:20px 0;
+}
+.kousi figcaption{
+    text-align:left;
+}
+.clearfix:after{
+    content:""
+}
+.link-contact{
+    display:block;
+    width:300px;
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+    background:#b9cd33;
+    line-height:4;
+    border-radius:50px;
+    margin: 0 auto;;
+
+}
+.link-contact:hover{
+    background:#d4e082;
+}
+/*---------------qanda----------------------:*/
+.qanda h2,.contact h2{
+    color:#966c3b;
+    font-size:1.5em;
+    font-weight: bold;
+    border-bottom: dashed 1px #966c3b;
+    margin:30px 0;
+}
+.qanda{
+    width:70%;
+    margin:0 auto;
+    padding:10px;
+    linne-height:4em;
+}
+.qanda dt{
+    line-height: 3em;
+    font-weight:bold;
+    color:#966c3b;
+    padding-left: 3em;
+    background: url(../images/q.png) no-repeat left;
+}
+.qanda dd{
+     line-height: 3em;
+    margin-bottom: 2em;
+    padding-left: 3em;
+    background: url("../images/a.png") no-repeat left top;
+}
+ /*---------------contact-----------------*/
+.contact h2{
+    color:#966c3b;
+	font-size:1.8rem;
+	border-bottom:1px #966c3b dashed;
+	margin:40px 0;
+}
+form{
+	background: #fff;
+	border-radius:15px;
+	padding:30px;
+}
+form table{
+	width:100%;
+}
+form td{
+	padding: 20px 10px;
+	position: relative;
+}
+.contact form td:first-of-type{
+    padding-top:60px;
+	width:20%;
+}
+input,select,textarea{
+	border:1px solid #333;
+	padding:5px;
+	border-radius: 5px;
+	width:25rem;
+	position: relative;
+}
+.contact form input{
+    width:50%;
+}
+.contact form select{
+    width:50%;
+}
+textarea{
+	width: 100%;
+	height:8em;
+}
+input[type="submit"]{
+	padding: 0;
+	border:none;
+}
+/*.contact{
+    padding:10px;
+    margin-bottom:20px;
+     box-sizing: border-box;
+    width:70%;
+    margin:0 auto;
+}
+form{
+	background: #fff;
+	border-radius:15px;
+	padding: 30px;
+}
+form table{
+	width:100%;
+}
+/*table>td{
+    position: relative;
+}*/
+input,select,textarea{
+    padding:10px;
+    margin:2em 0;
+    font-size: 16px;
+width:100%;
+    border:1px solid #333;
+}
+.link-contact{
+    width:40%;
+    margin:0 auto;
+}
+textarea{
+    height: 8em;
+}
+.contact p{
+    margin: 20px 0;
+}
+td{
+    align-items: center;
+}*/
+/*.select::after{
+  font-family: "Font Awesome 5 Free";
+  content: '\f0ab';
+  font-weight: 900;
+    position:absolute;
+  left:30rem;
+    transform: translateY(-50%);
+    top:50%;
+    font-size:15px;
+}*/
+    /*---------------footer-----------------*/
+footer{
+    background:#d0af84;
+    width:100%;
+}
+footer {
+    padding:0 30px;
+    background:#d0af84;
+    color: #FFFFFF;
+    margin-top:40px;
+}
+footer li{
+    display:inline-block;
+    padding-right: 1em;
+}
+footer li a:hover{
+    opacity: 0.7;
+}
+footer small{
+    font-size: .9rem;
+}
+/*-----------------media max-wodth:768---------------------------------*/
+@media (max-width:768px){
+    h1 .h1{
+        display:none;
+    }
+header button{
+	display:inline;
+}
+ header+nav{
+        display:none;
+        line-height: 4em;
+        position:fixed;
+        top:66px;
+        left:0;
+        width:100%;
+}
+   header+nav .container{
+        padding:0;
+    }
+    header+nav li{
+    width:100%;
+           border-bottom: 1px solid #fff;
+    }
+     /*下のコンテンツにかぶるように*/
+    /*長押ししたとき端まで色（赤）を入れる*/
+   /* 行間を大きくする*/
+    /*罫線を入れる*/
+.mainVisual{
+    background:url("../images/sanpolb.jpg") center/cover;
+    height:100vh;
+}
+ .subtitle{
+        display:block;
+     width:60%;
+     margin:0 auto;
+    }
+     .lesson div,
+    .schedule>div{
+        width:100%;
+    }
+
+
+    footer .container{
+        padding:0 10px;
+    }
+    .course li{
+        width:49.5%;
+        margin-bottom:7px;
+    }
+
+}
+/*-----------------media max-wodth:480---------------------------------*/
+@media (max-width:480px)
+{
+    
+    h1{
+        width:60%;
+    }
+    br{
+        display:none;
+    }
+    .four li{
+        display:block;
+        width:100%;
+    }
+    .lesson div{
+        width:100%;
+    }
+
+    .schedule dd
+    {  padding:.7em 0 0;
+        width:100%;
+         }
+    .schedule dt{
+        padding:0 0 .7em 1em;
+    }
+
+    .select::after{
+  left:auto;
+        right:7.5px;
+    transform: translateY(-50%);
+    top:50%;
+    font-size:15px;
+}
+    form td{
+        float:left;
+        width:100%!important;
+        text-align: left!important;
+    }
+    footer li{
+        display:block;
+        padding:0 0 0 10px;
+    }
+}
